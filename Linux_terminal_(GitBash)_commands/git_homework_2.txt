@@ -1,0 +1,240 @@
+GIT Homework 2
+
+Для выполнения задания у вас должен быть установлен для Windows - GitBash.
+Создан аккаунт в GitHub
+
+Все шаги сценария выполняйте в терминале GitBush, Terminal, в папке под гитом.
+
+Как отправить ДЗ на проверку.
+ 1. Создайте текстовый файл как в первом ДЗ по Terminal.
+ 2. Сценарий перенесите в этот файл.
+ 3. На против каждого действия - напишите команду в GitBash
+Файл со сценарием и ссылку на свой гит хаб отправляйте менторам на проверку.
+
+JSON
+ 4. Создать внешний репозиторий c названием JSON. 
+Создаем внешний репозиторий на github "JSON_32"
+ 5. Клонировать репозиторий JSON на локальный компьютер.
+Копируем ссылку на репозиторий, заходим в локальную папку гита, прописываем в консоле
+git clone git@github.com:artemlat/JSON_32.git
+ 6. Внутри локального JSON создать файл “new.json”. 
+cd JSON_32/
+touch new.json
+ 7. Добавить файл под гит.
+git add .
+ 8. Закоммитить файл.
+git commit -m 'new.json'
+ 9. Отправить файл на внешний GitHub репозиторий.
+git push
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+cat > new.json
+{
+  "initials":[
+    {
+
+       "name":"Artiom",
+       "Surname":"Latyshev",
+       "Patronymic":"Alexandrovich"
+    }
+  ],
+   "age":25,
+   "pet_number":1,
+   "wanted_salary":2000
+}
+ctrl + C
+ 11. Отправить изменения на внешний репозиторий.
+git commit -am 'changed new.json'
+git push
+ 12. Создать файл preferences.json
+touch preferences.json
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+cat > preferences.json
+{
+  "favourite_film":"Logan",
+  "favourite_series":"TWD",
+  "favourite_food":"meat",
+  "favourite_season":"spring",
+  "wanted_country_to_visit":"Norway"
+}-
+ctrl + C
+ 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+touch sklls.json
+cat > sklls.json
+{
+  "Skills":[
+    {
+
+       "first_skill":"git_using",
+       "second_skill":"QA_knolage",
+       "third_skill":"python_programing",
+       "fourth_skill":"JS_programing",
+       "fifth_skill":"automatization",
+    }
+  ]
+}
+ctrl + C 
+ 15. Отправить сразу 2 файла на внешний репозиторий.
+git add .
+git commit -am "2 new files"
+git push
+ 16. На веб интерфейсе создать файл bug_report.json.
+Add file --> Create new file
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Commit new file
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+Нажать Edit this file, написать баг репорт
+{
+  "First_bug":[
+    {
+
+       "Environment":"Windows 11, Mozilla Firefox 107.0",
+       "Title":"На странице результатов поиска клик по кнопкам [Trade now] или [Create & verify your account] приводит к обновлению страницы (Если в Devtools удалить виcящий на кнопках соответствующий ивент, функционал восстанавливается)",
+       "Steps":"1. Открыть сайт capital.com 2. Открыть Search 3. Ввести запрос  и нажать enter 4. Нажать на кнопку [Trade now]/[Create & verify your account]",
+       "Expected_result":"Открывается форма регистрации",
+       "Actual_result":"Страница обновляется"
+    }
+  ]
+}
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Нажать Commit changes
+ 20. Синхронизировать внешний и локальный репозиторий JSON
+Вернуться в папку локального репозитория "JSON_32" и в консоле ввести:
+git pull
+
+XML
+ 21. Создать внешний репозиторий c названием XML.
+Создаем внешний репозиторий на github "XML_32"
+ 22. Клонировать репозиторий XML на локальный компьютер.
+Копируем ссылку на репозиторий, заходим в локальную папку гита, прописываем в консоле git clone git@github.com:artemlat/XML_32.git
+ 23. Внутри локального XML создать файл “new.xml”.
+cd XML_32
+touch new.xml
+ 24. Добавить файл под гит.
+git add .
+ 25. Закоммитить файл.
+git commit -m 'add new.xml'
+ 26. Отправить файл на внешний GitHub репозиторий.
+git push
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+cat >> new.xml
+<info>
+<fullname>Латышев Артем Александрович</fullname>
+<age>25</age>
+<petsnumber>1</petsnumber>
+<wantedsalary>2000</wantedsalary>
+</info>
+ctrl + C
+ 28. Отправить изменения на внешний репозиторий.
+git commit -am "add info"
+git push
+ 29. Создать файл preferences.xml
+touch preferences.xml
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+cat >> preferences.xml
+<preferences>
+<favourite_film>Logan</favourite_film>
+<favourite_series>TWD</favourite_series>
+<favourite_food>meat</favourite_food>
+<favourite_season>spring</favourite_season>
+<wanted_country_to_visit>Norway</wanted_country_to_visit>
+</preferences>
+ctrl + C 
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+cat >> sklls.xml
+<skills>
+<first_skill>git_using</first_skill>
+<second_skill>QA_knolage</second_skill>
+<third_skill>python_programing</third_skill>
+<fourth_skill>JS_programing</fourth_skill>
+</skills>
+ctrl + C
+ 32. Сделать коммит в одну строку.
+git add .
+git commit -am "add 2 new files"
+ 33. Отправить сразу 2 файла на внешний репозиторий.
+git push
+ 34. На веб интерфейсе создать файл bug_report.xml.
+Add file --> Create new file
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Commit new file
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+Нажать на Edit this file, написать баг репорт
+<first_bug>
+<Environment>Windows 11, Mozilla Firefox 107.0</Environment>
+<Title>На странице результатов поиска клик по кнопкам [Trade now] или [Create & verify your account] приводит к обновлению страницы (Если в Devtools удалить виcящий на кнопках соответствующий ивент, функционал восстанавливается)</Title>
+<Steps>1. Открыть сайт capital.com 2. Открыть Search 3. Ввести запрос  и нажать enter 4. Нажать на кнопку [Trade now]/[Create & verify your account]</Steps>
+<Expected_result>Открывается форма регистрации</Expected_result>
+<Actual_result>Страница обновляется</Actual_result> 
+</first_bug>
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Нажать Commit changes
+ 38. Синхронизировать внешний и локальный репозиторий XML
+Вернуться в папку локального репозитория "XML" и в консоле ввести:
+git pull
+
+TXT
+ 1. Создать внешний репозиторий c названием TXT.
+Создаем внешний репозиторий на github "TXT_32"
+ 2. Клонировать репозиторий TXT на локальный компьютер.
+Заходим в папку локального гита, в консоле пишем:
+git clone git@github.com:artemlat/TXT_32.git
+ 3. Внутри локального TXT создать файл “new.txt”.
+cd TXT_32/
+touch new.txt
+ 4. Добавить файл под гит.
+git add .
+ 5. Закоммитить файл.
+git commit -m 'add new.txt'
+ 6. Отправить файл на внешний GitHub репозиторий.
+git push
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+cat >> new.txt
+ФИО - Латышев Артем Александрович
+Возраст - 25
+Количество домашних животных - 1
+Будущая желаемая зарплата - 2000
+ctrl + C
+ 8. Отправить изменения на внешний репозиторий.
+git commit -am 'update new.txt'
+git push
+ 9. Создать файл preferences.txt
+touch preferences.txt
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+cat >> preferences.txt
+Любимый фильм - Логан
+Любимый сериал - БХМ
+Любимая еда - мясо
+Любимое время года - весна
+Страна которую хотел бы посетить - Норвегия
+ctrl + C
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
+cat >> sklls.txt
+1) Работа с консолью
+2) Знания QA
+3) Программирование Python
+4) Программирование JS
+ctrl + C
+ 12. Сделать коммит в одну строку.
+git add .
+git commit -m "add 2 new files"
+ 13. Отправить сразу 2 файла на внешний репозиторий.
+git push
+ 14. На веб интерфейсе создать файл bug_report.txt.
+Add file --> Create new file
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Нажать Commit new file
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+Нажать Edit this file
+Environment - Windows 11, Mozilla Firefox 107.0
+Title - На странице результатов поиска клик по кнопкам [Trade now] или [Create & verify your account] приводит к обновлению страницы (Если в Devtools удалить виcящий на кнопках соответствующий ивент, функционал восстанавливается)
+Steps - 1. Открыть сайт capital.com
+2. Открыть Search
+3. Ввести запрос (пример "euro") и нажать enter
+4. Нажать на кнопку [Trade now]/[Create & verify your account]
+Expected Result - Открывается форма регистрации
+Actual Result - Страница обновляется
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Нажать Commit changes
+ 18. Синхронизировать внешний и локальный репозиторий TXT
+Вернуть в папку локального репозитория "TXT" и в консоле ввести:
+git pull
